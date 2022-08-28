@@ -2,13 +2,15 @@
 layout: default
 ---
 
-{{ content }}
+<div>
+  <h3>Teaching Philosophy</h3> 
+</div>
 
 <div class="row g-5 mb-5">
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Courses</h3>
     {% for course in site.data.settings.courses %}
-      <p><a href="{{ site.github.url }}/courses/{{ course.url}}">{{ course.name }}</a></p>
+      <p><a href="{{ site.github.url }}/teaching/{{ course.url}}">{{ course.name }}</a></p>
     {% endfor %}
   </div>
 </div>
