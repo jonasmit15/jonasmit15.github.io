@@ -9,7 +9,11 @@
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
+      {% if item.name=="cv" %}
+      <a class="me-3 py-2 text-decoration-none" href="./CV_Fall_2022.pdf" target="blank">cv</a>
+      {% else %}
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
+      {% endif %}
     {% endfor %}
   </nav>
 </header>
